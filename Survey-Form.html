@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCamp Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section class="intro">
+    <h1 id="title">My Survey Forum Project</h1>
+    <p id="description">I am building this survey form to show off what I have learned so far!</p>
+</section>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name <input id="name" required type="text" placeholder="Enter your username"></label>
+            <label id="email-label" for="email">Email <input id="email" required type="email" placeholder="Enter your email"></label>
+        </fieldset>
+
+        <fieldset>
+        <label id="number-label" for="number">Player level (Optional) <input id="number" min="0" max="100" type="number" placeholder="Enter your player level"></label>
+        <label for="dropdown"> What is your current skill level?
+              <select name="level" id="dropdown">
+                <option value="0">Please Choose</option>
+                <option value="1">Beginner</option>
+                <option value="3">Adventurer</option>
+                <option value="4">Hero</option>
+                <option value="5">Veteran</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <label for="radio"> Are you new to the game?
+            <input type="radio" name="radio" id="radio-1" value="0"> Yes
+            <input type="radio" name="radio" id="radio-2" value="1"> No
+        </label>
+        <label for=""> What part of the game would you like improved?
+            <input type="checkbox" value="1" name="improve-1" id="improve-1"> The Menu User Interface.
+            <input type="checkbox" value="2" name="improve-2" id="improve-2"> The Heads Up Display.
+            <input type="checkbox" value="3" name="improve-3" id="improve-3"> The Difficulty Settings.
+            <input type="checkbox" value="4" name="improve-4" id="improve-4"> The Gameplay Mechanics.
+            <input type="checkbox" value="5" name="improve-5" id="improve-5"> The Graphics.
+            <input type="checkbox" value="6" name="improve-6" id="improve-6"> Nothing :).
+        </label>
+        <label for="comment"> Any additional improvements?
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="I would like more rainbows!"></textarea>
+        </label>
+    </fieldset>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
